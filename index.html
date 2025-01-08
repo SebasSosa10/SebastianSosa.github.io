@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joan Sebastián Sosa Bedoya</title>
+    <link rel="stylesheet" href="CSS/stile.css" />
+    <script src="JS/envias.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav justify-content-center my-4">
+            <a href="#yo" class="nav-link">Acerca de</a>
+            <a href="#habilidades" class="nav-link">Habilidades</a>
+            <a href="#servicios" class="nav-link">Servicios</a>
+            <a href="#contacto" class="nav-link">Contacto</a>
+            <a href="CV/C.V Joan Sebastian Sosa Bedoya.pdf" class="nav-link" target="_blank"
+                download="C.V Joan Sebastian Sosa Bedoya.pdf">Curriculum</a>
+        </nav>
+        <video autoplay muted loop id="banner-video">
+            <source src="imagenes/Vídeo.mp4" type="video/mp4" />
+            Tu navegador no soporta el video.
+        </video>
+        <div class="content">
+            <img src="Video/Vídeo.mp4" alt="Foto" onclick="location.reload();" />
+            <div class="text">
+                <h1>Joan Sebastián Sosa Bedoya</h1>
+                <p id="te">Desarrollador de Software</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="yo" class="container">
+        <h2>Acerca De</h2>
+        <p style="margin-left: 30px; line-height: 1.8">
+            Estudiante de Ingeniería de Software con experiencia en desarrollo de
+            software, especializado en backend y bases de datos. Competente en la
+            implementación de aplicaciones escalables y de alto rendimiento
+            utilizando tecnologías como Java, Spring Boot y bases de datos
+            relacionales (PostgreSQL, Oracle, SQL Server). Destacado por la
+            capacidad de diseñar arquitecturas eficientes, optimizar procesos, y
+            colaborar en equipos de trabajo bajo metodologías ágiles. Mi enfoque en
+            la mejora continua y automatización ha contribuido a incrementar la
+            productividad y la calidad en los proyectos desarrollados.
+        </p>
+    </section>
+
+    <section id="habilidades" class="container">
+        <h2>Habilidades Técnicas</h2>
+        <div class="habilidades">
+            <div class="habilidad">
+                <h3>Lenguajes de Programación</h3>
+                <p>Java, SQL, JavaScript, Python, PHP</p>
+            </div>
+            <div class="habilidad">
+                <h3>Frameworks y Tecnologías</h3>
+                <p>Spring Boot, JPA, RESTful APIs, Maven</p>
+            </div>
+            <div class="habilidad">
+                <h3>Bases de Datos</h3>
+                <p>PostgreSQL, Oracle, SQL Server, MongoDB</p>
+            </div>
+        </div>
+        <div class="habilidades mt-4">
+            <div class="habilidad">
+                <h3>Cloud</h3>
+                <p>AWS, Azure</p>
+            </div>
+            <div class="habilidad">
+                <h3>Metodologías Ágiles</h3>
+                <p>
+                    Scrum, Kanban, XP (Extreme Programming), Clean Code, Patrones de
+                    Diseño
+                </p>
+            </div>
+            <div class="habilidad">
+                <h3>DevOps</h3>
+                <p>Docker, Git, Jenkins</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="container">
+        <h2>Servicios</h2>
+        <div style="margin-left: 30px">
+            <h5 class="servicio">Creación de Aplicaciones:</h5>
+            <p class="descripcion">
+                Desarrollo de soluciones personalizadas utilizando tecnologías
+                modernas como Java, Spring Boot y bases de datos relacionales.
+            </p>
+            <br />
+            <h5 class="servicio">Diseño y Desarrollo Web:</h5>
+            <p class="descripcion">
+                Implementación de sitios web dinámicos y responsivos utilizando HTML5,
+                CSS3, Bootstrap y JavaScript.
+            </p>
+            <br />
+            <h5 class="servicio">Diseño de Bases de Datos:</h5>
+            <p class="descripcion">
+                Modelado, diseño y optimización de bases de datos en PostgreSQL,
+                Oracle y SQL Server.
+            </p>
+            <br />
+            <h5 class="servicio">Actualización de Aplicaciones:</h5>
+            <p class="descripcion">
+                Optimización de sistemas existentes, mejoras en funcionalidades y
+                migración a tecnologías avanzadas.
+            </p>
+            <br />
+            <h5 class="servicio">Administración de Servidores:</h5>
+            <p class="descripcion">
+                Gestión de servidores y dominios para garantizar estabilidad,
+                seguridad y rendimiento continuo.
+            </p>
+            <br />
+            <h5 class="servicio">Desarrollo e Implementación de Proyectos:</h5>
+            <p class="descripcion">
+                Liderazgo en todas las fases del desarrollo de proyectos tecnológicos,
+                asegurando calidad y cumplimiento de objetivos.
+            </p>
+        </div>
+    </section>
+
+    <section id="contacto" class="container">
+        <h2>Contacto</h2>
+        <section id="contac" class="container">
+            <div class="form-container">
+                <form id="contactForm" method="POST">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" name="asunto" placeholder="Asunto" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" name="mensaje" rows="5" placeholder="Mensaje"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+                <div id="responseMessage" style="margin-top: 15px;"></div>
+            </div>
+        </section>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="https://www.linkedin.com/in/joan-sebastian-sosa-bedoya-84099925a/" target="_blank">
+                        <img src="imagenes/Linkedin.png" alt="LinkedIn" class="img-responsive center-block"
+                            width="150px" />
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="https://github.com/SebasSosa10" target="_blank">
+                        <img src="imagenes/GitHub.png" alt="GitHub" class="img-responsive center-block" width="150px" />
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="mailto:joansebastiansosa10@gmail.com" target="_blank">
+                        <img src="imagenes/Gmail.png" alt="Email" class="img-responsive center-block" width="130px" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            &copy; 2025 Joan Sebastián Sosa Bedoya. Todos los derechos reservados.
+        </p>
+    </footer>
+</body>
+
+</html>
