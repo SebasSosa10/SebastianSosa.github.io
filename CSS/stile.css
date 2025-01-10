@@ -70,6 +70,7 @@ nav a:hover {
 }
 
 header img {
+    margin-top: 60px;
     border-radius: 40%;
     width: 180px;
     height: 210px;
